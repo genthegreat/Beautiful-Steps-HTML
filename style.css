@@ -1,0 +1,135 @@
+.main-container-box {
+    margin: auto;
+    width: inherit;
+    height: 20em;
+  }
+  
+  .holding-box, .column-box, .circle-box, .info-box {
+    text-align: center;
+  }
+  
+  .holding-box {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 18em;
+    position: relative;
+  }
+  
+  .holding-box * {
+    margin: auto;
+    font-style: normal;
+    font-family: Poppins;
+  }
+  
+  .holding-box .column-box:not(.box-4) {
+    display: inline-block;
+    flex-basis: 32%;
+  }
+  
+  .column-box {
+    height: inherit;
+  }
+  
+  .circle-box {
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: 1em;
+    height: 5em;
+    width: 5em;
+    border: 2px solid #1b551b;
+    background-color: white;
+    z-index: 5;
+    display: flex;
+  }
+  
+  .circle-box:hover {
+    border: 2px solid #6ec1e4;
+  }
+  
+  .info-box {
+    position: relative;
+    top: 30px;
+    width: 100%;
+  }
+  
+  .info-box h3 {
+    font-size: 17px;
+    font-weight: 900;
+    color: #005b63;
+  }
+  
+  .info-box a {
+    color: #22263D;
+    font-weight: 600;
+    text-decoration: none;
+    outline: o;
+  }
+  
+  .info-box a:hover {
+    color: #005b63;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .info-box {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+  }
+  
+  .icon-box {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .icon-box:hover {
+    color: #6ec1e4;
+  }
+  
+  .holding-box .box-4 {
+    position: absolute;
+    width: 60%;
+    height: 1;
+    z-index: 4;
+    border: unset;
+    top: 24%;
+    border-top: 2px dotted #5dbd98;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main-container-box {
+      height: auto;
+    }
+    .holding-box .column-box:not(.box-4) {
+      display: unset;
+      flex-basis: 100%;
+    }
+    
+    .holding-box {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+    }
+    
+    .holding-box .box-4 {
+      display: none;
+    }
+    .circle-box {
+      margin-bottom: 10px;
+    }
+    .info-box, .circle-box, .holding-box {
+      position: unset;
+    }
+    .info-box {
+      padding-bottom: 10px;
+    }
+  }
+  
