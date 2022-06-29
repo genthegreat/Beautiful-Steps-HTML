@@ -1,3 +1,4 @@
+/* Steps HTML CSS */
 .main-container-box {
     margin: auto;
     width: inherit;
@@ -133,3 +134,65 @@
     }
   }
   
+
+  /* Team Gallery CSS */
+  #national-centers-people img {
+    height: 75px;
+    width: 75px;
+  }
+  
+  #national-centers-people .people-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #national-centers-people .people-row > div {
+    flex: 30%;
+  }
+  
+  #national-centers-people .person-container {
+    position: relative;
+    width: auto;
+    padding: 4px;
+    margin: 5px;
+  }
+  
+  #national-centers-people .person-container .person-image {
+    position: relative;
+    width: 30%;
+    top: 0%;
+    left: 0%;
+  }
+  
+  #national-centers-people .person-container .person-info {
+    position: absolute;
+    top: 0%;
+    left: 75px;
+    width: 70%;
+  }
+  
+  #national-centers-people .person-info h3 {
+    font-size: 16px;
+    line-height: 1em;
+    padding: 0;
+    margin-bottom: -3px;
+  }
+  
+  #national-centers-people .person-info h6 {
+    font-size: 12px;
+    padding: 0;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #national-centers-people .people-row {
+      display: unset;
+    }
+   
+    #national-centers-people .person-container {
+      position: relative;
+      width: unset;
+      border: 1px solid blue;
+      padding: 4px;
+      margin: 5px;
+    }
+  }
